@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('../../fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Splatink';
+  src: url('../../fonts/Splatink_PERSONAL_USE_ONLY.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --primary: #6350A3;
+  --primary-hover: #4E3F8A;
+  --secondary: #EEECEE;
+  --background: #F9FAFB;
+  --surface: #FFFFFF;
+  --text: #111827;
+  --text-muted: #4B5563;
+  --border: #E5E7EB;
+
+  /* Typography */
+  --font-heading: 'Michroma', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-display: 'Splatink', cursive;
+  --font-size-base: 16px;
+  --line-height: 1.6;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+
+  /* Misc */
+  --radius: 0.75rem;
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Layout & Components (Semantic Selectors) */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+main > header {
+  padding: var(--space-lg) 0;
+  text-align: center;
+}
+
+main > header p {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  padding-bottom: var(--space-lg);
+}
+
+main > section article {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+main > section article:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+main > section article div {
+  width: 80px;
+  height: 80px;
+  background: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+}
+
+main > section article div span {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+main > section article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+main > section article p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+}
+
+main > section article a {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  background: transparent;
+  transition: var(--transition);
+}
+
+main > section article a:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
