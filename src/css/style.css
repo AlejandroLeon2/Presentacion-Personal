@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Michroma";
+    src: url(/Presentacion-Personal/assets/fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Presentacion-Personal/assets/fonts/Montserrat-Regular.ttf);
+}
+
+:root{
+    --color-primario: #6350A3;
+    --color-secundario: #EEECEE;
+    --color-terciario: #F6DCEB;
+    --color-cuaternario: #7C7D7F;
+
+    --font-estandar: "Montserrat", sans-serif;
+    --font-titulos: "Michroma", sans-serif;
+
+    --text-xx: 40px;
+    --text-xl: 32px;
+    --text-lg: 24px;
+    --text-md: 16px;
+    --text-sm: 12px;
+}
+
+body{
+    background:white;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    background-color: white;
+    height: 120px;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav{
+    display:flex;
+    justify-content: right;
+    font-family: var(--font-titulos);
+    font-size: var(--text-md);
+    gap:20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-cuaternario);
+}
+
+a:hover{
+    color: var(--color-primario);
+}
+
+.container{
+    margin: 0 120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    box-shadow: 0px 4px 10px rgba(124, 125, 127, 0.2);
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+    justify-content: right;
+}
+
+.circulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vw;
+    border-radius:50%;
+    position: absolute;
+    left: -30vw;
+    top: -11vw;
+    z-index: 1;
+    background: conic-gradient(
+var(--color-primario) 0deg 30deg,
+transparent 30deg 36deg,
+var(--color-primario) 36deg 66deg,
+transparent 66deg 72deg,
+var(--color-primario) 72deg 102deg,
+transparent 102deg 108deg,
+var(--color-primario) 108deg 138deg,
+transparent 138deg 144deg,
+var(--color-primario) 144deg 174deg,
+transparent 174deg 180deg,
+var(--color-cuaternario) 180deg 210deg,
+transparent 210deg 216deg,
+var(--color-cuaternario) 216deg 246deg,
+transparent 246deg 252deg,
+var(--color-cuaternario) 252deg 282deg,
+transparent 282deg 288deg,
+var(--color-cuaternario) 288deg 318deg,
+transparent 318deg 324deg,
+var(--color-cuaternario) 324deg 354deg,
+transparent 354deg 360deg
+);
+}
+
+.circulo-interior{
+    width:60vw;
+    height:60vw;
+    border-radius:50%;
+    background: white
+}
+
+.foto{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:20vw;
+
+    border-radius:10px;
+    overflow:hidden;
+
+    transform: 
+        translate(-50%, -50%)
+        rotate(123deg) 
+        translate(35vw) 
+        rotate(-123deg);
+}
+
+.foto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
