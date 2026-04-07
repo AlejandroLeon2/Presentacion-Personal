@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Michroma";
+    src: url(/Presentacion-Personal/assets/fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Presentacion-Personal/assets/fonts/Montserrat-Regular.ttf);
+}
+
+:root{
+    --color-primario: #6350A3;
+    --color-secundario: #EEECEE;
+    --color-terciario: #F6DCEB;
+    --color-cuaternario: #7C7D7F;
+    --sombras: 0px 4px 10px rgba(124, 125, 127, 0.2);
+
+    --font-estandar: "Montserrat", sans-serif;
+    --font-titulos: "Michroma", sans-serif;
+
+    --text-xx: 2.00rem;
+    --text-xl: 1.75rem;
+    --text-lg: 1.50rem;
+    --text-md: 1.00rem;
+    --text-sm: 0.75rem;
+}
+
+h1{
+    color: var(--color-cuaternario);
+    font-family: var(--font-titulos);
+    font-size: var(--text-xx);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.titulo{
+    display: flex;
+}
+
+.der{
+    background-color: var(--color-primario);
+    width: 100vw;
+    height: 0.5rem;
+}
+
+.izq{
+    background-color: var(--color-primario);
+    width: 8rem;
+}
+
+h2{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-family: var(--font-titulos);
+    font-size: var(--text-xl);
+    padding: 1rem;
+    padding-left: 8rem;
+    padding-right: 4rem;
+}
+
+#primera-seccion{
+    display: flex;
+}
+.contenido{
+    display: flex;
+    margin-left: 8rem;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: var(--color-secundario);
+    color: var(--color-cuaternario);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#globo{
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: row;
+    width: 0;
+  height: 0;
+  border-left: 50px solid transparent;  /* Lado izquierdo transparente */
+  border-right: 50px solid transparent; /* Lado derecho transparente */
+  border-bottom: 100px solid blue;
+}
+
+table{
+    font-family: var(--font-estandar);
+    border-spacing: 1rem;
+}
+
+ul{
+    font-family: var(--font-estandar);
+    padding-bottom: 1rem;
+}

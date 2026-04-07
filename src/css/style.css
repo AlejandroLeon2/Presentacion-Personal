@@ -18,15 +18,16 @@
     --color-secundario: #EEECEE;
     --color-terciario: #F6DCEB;
     --color-cuaternario: #7C7D7F;
+    --sombras: 0px 4px 10px rgba(124, 125, 127, 0.2);
 
     --font-estandar: "Montserrat", sans-serif;
     --font-titulos: "Michroma", sans-serif;
 
-    --text-xx: 40px;
-    --text-xl: 32px;
-    --text-lg: 24px;
-    --text-md: 16px;
-    --text-sm: 12px;
+    --text-xx: 2.00rem;
+    --text-xl: 1.75rem;
+    --text-lg: 1.50rem;
+    --text-md: 1.00rem;
+    --text-sm: 0.75rem;
 }
 
 body{
@@ -35,19 +36,28 @@ body{
 }
 
 header{
-    position: relative;
+    display: flex;
+    position:sticky;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
-    height: 120px;
     width: 100vw;
     z-index: 2;
 }
 
+header img{
+    padding: 1rem;
+    padding-left: 5rem;
+}
+
 nav{
-    display:flex;
+    display: flex;
+    position: relative;
     justify-content: right;
+    padding-right: 5rem;
     font-family: var(--font-titulos);
     font-size: var(--text-md);
-    gap:20px;
+    gap:2rem;
 }
 
 a{
@@ -59,18 +69,12 @@ a:hover{
     color: var(--color-primario);
 }
 
-.container{
-    margin: 0 120px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
 
 .dropdown-content{
+    background-color: white;
     display:none;
     position:absolute;
-    box-shadow: 0px 4px 10px rgba(124, 125, 127, 0.2);
+    box-shadow: var(--sombras);
 }
 
 .dropdown-content a{
@@ -82,70 +86,4 @@ a:hover{
 .dropdown:hover .dropdown-content{
     display:block;
     justify-content: right;
-}
-
-.circulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vw;
-    border-radius:50%;
-    position: absolute;
-    left: -30vw;
-    top: -11vw;
-    z-index: 1;
-    background: conic-gradient(
-var(--color-primario) 0deg 30deg,
-transparent 30deg 36deg,
-var(--color-primario) 36deg 66deg,
-transparent 66deg 72deg,
-var(--color-primario) 72deg 102deg,
-transparent 102deg 108deg,
-var(--color-primario) 108deg 138deg,
-transparent 138deg 144deg,
-var(--color-primario) 144deg 174deg,
-transparent 174deg 180deg,
-var(--color-cuaternario) 180deg 210deg,
-transparent 210deg 216deg,
-var(--color-cuaternario) 216deg 246deg,
-transparent 246deg 252deg,
-var(--color-cuaternario) 252deg 282deg,
-transparent 282deg 288deg,
-var(--color-cuaternario) 288deg 318deg,
-transparent 318deg 324deg,
-var(--color-cuaternario) 324deg 354deg,
-transparent 354deg 360deg
-);
-}
-
-.circulo-interior{
-    width:60vw;
-    height:60vw;
-    border-radius:50%;
-    background: white
-}
-
-.foto{
-    position:absolute;
-
-    top:50%;
-    left:50%;
-
-    width:20vw;
-
-    border-radius:10px;
-    overflow:hidden;
-
-    transform: 
-        translate(-50%, -50%)
-        rotate(123deg) 
-        translate(35vw) 
-        rotate(-123deg);
-}
-
-.foto img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }

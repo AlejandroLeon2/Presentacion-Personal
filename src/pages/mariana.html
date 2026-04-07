@@ -5,25 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Coffee | Desarrollo web</title>
 
-    <link rel="stylesheet" href="/Presentacion-Personal/src/css/style.css">
-    <link rel="shortcut icon" href="/Presentacion-Personal/assets/images/favicon.svg" type="image/x-icon">
-
+    <link rel="stylesheet" href="/src/css/style.css">
+     <link rel="stylesheet" href="/src/css/style-mariana.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
 </head>
 <body>
-
-<header class="nav">
-    <img src="/Presentacion-Personal/assets/images/isotipo.svg">
+<header>
+    <a href="/index.html"><img src="/assets/images/isotipo.svg"></a>
     <nav>
-        <a href="/Presentacion-Personal/index.html">INICIO</a>
+        <a href="/index.html">INICIO</a>
         <div class="dropdown">
-            <a class="dropbtn">NUESTRO EQUIPO ▾</a>
+            <a href="#">NUESTRO EQUIPO ▾</a>
             <div class="dropdown-content">
                 <a href="/Presentacion-Personal/src/pages/pedro.html">Pedro Leon</a>
                 <a href="/Presentacion-Personal/src/pages/victor.html">Victor Herrera</a>
-                <a href="/Presentacion-Personal/src/pages/mariana.html">Mariana Iñiguez</a>
+                <a href="/src/pages/mariana.html">Mariana Iñiguez</a>
             </div>
         </div>
     </nav>
 </header>
+
+<main>
+    <h1>Mariana Iñiguez</h1>
+    <section>
+        <div class="titulo">
+            <div class="izq"></div>
+            <h2>Habilidades</h2>
+            <h2>Hobbies</h2>
+            <div class="der"></div>
+        </div>
+        <div id="primera-seccion">
+            <div class="contenido">
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>VS Code</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Git</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Pensamiento lógico</li>
+                    <li>Aprendizaje Rápido</li>
+                    <li>Organización</li>
+                    <li>Proactividad</li>
+                </ul>
+            </div> 
+            <div class="contenido">
+                    <table>
+                        <tr>
+                            <td><img src="/assets/images/estudiar.svg" alt="Estudiar"></td>
+                            <td><img src="/assets/images/investigar.svg" alt="investigar"></td>                
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/images/musica.svg" alt="Música"></td>
+                            <td><img src="/assets/images/arte.svg" alt="Dibujo"></td>
+                        </tr>
+                        <tr>
+                        <td><img src="/assets/images/patines.svg" alt="Patinaje urbano"></td>
+                        <td><img src="/assets/images/videojuegos.svg" alt="videojuegos"></td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="contenido" id="globo">
+
+            </div>
+            <div class="contenido" id="foto">
+
+            </div>
+        </div>
+        
+    </section>
+</main>
 </body>
 </html>
