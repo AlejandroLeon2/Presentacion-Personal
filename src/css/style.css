@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "Michroma";
-    src: url(/Presentacion-Personal/assets/fonts/Michroma-Regular.ttf);
+    src: url(/assets/fonts/Michroma-Regular.ttf);
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/Presentacion-Personal/assets/fonts/Montserrat-Regular.ttf);
+    src: url(/assets/fonts/Montserrat-Regular.ttf);
 }
 
 :root{
@@ -65,9 +65,14 @@ a:hover{
 
 .dropdown-content{
     background-color: white;
-    display:none;
-    position:absolute;
+    display: none;
+    position: absolute;
     box-shadow: var(--sombras);
+    z-index: 2;
+}
+
+.dropdown-content.active{
+    display: block;
 }
 
 .dropdown-content a{

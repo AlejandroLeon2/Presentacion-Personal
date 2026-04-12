@@ -6,76 +6,71 @@
     <title>Code Coffee | Desarrollo web</title>
 
     <link rel="stylesheet" href="/src/css/style.css">
-     <link rel="stylesheet" href="/src/css/style-mariana.css">
+    <link rel="stylesheet" href="/src/css/style-mariana.css">
     <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
 </head>
 <body>
 <header class="container">
     <a href="/index.html"><img src="/assets/images/isotipo.svg"></a>
     <nav>
-        <a href="/index.html">INICIO</a>
-        <div class="dropdown">
-            <a href="#">NUESTRO EQUIPO ▾</a>
-            <div class="dropdown-content">
-                <a href="/Presentacion-Personal/src/pages/pedro.html">Pedro Leon</a>
-                <a href="/Presentacion-Personal/src/pages/victor.html">Victor Herrera</a>
-                <a href="/src/pages/mariana.html">Mariana Iñiguez</a>
-            </div>
+      <a href="/index.html">INICIO</a>
+      <div class="dropdown">
+        <a href="#" id="menu-equipo">NUESTRO EQUIPO ▾</a>
+        <div class="dropdown-content" id="dropdown-menu">
+          <a href="/Presentacion-Personal/src/pages/pedro.html">Pedro Leon</a>
+          <a href="/Presentacion-Personal/src/pages/victor.html">Victor Herrera</a>
+          <a href="/src/pages/mariana.html">Mariana Iñiguez</a>
         </div>
+      </div>
     </nav>
 </header>
 <main>
     <h1>Mariana Iñiguez</h1>
-    <section>
-        <div class="titulos">
-            <div class="habilidades">
-                <h2>Habilidades</h2>
-                <div class="contenido">
-                    <table>
-                        <tr>
-                            <td>HTML</td>
-                            <td>Figma</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>VS Code</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>Git</td>
-                        </tr>
-                    </table>
-                    <ul>
-                        <li>Trabajo en equipo</li>
-                        <li>Pensamiento lógico</li>
-                        <li>Aprendizaje Rápido</li>
-                        <li>Organización</li>
-                        <li>Proactividad</li>
-                    </ul>
-                </div> 
+        <div class="presentacion">
+            <div class="lado-izquierdo">
+                <div class="linea-gruesa"></div>
+                <h2 class="habilidades">Habilidades</h2>
+                <h2 class="hobbies">Hobbies</h2>
+                <section class="habilidades-contenido">
+                    <div class="habilidades-gruesas">
+                        <p>HTML</p>
+                        <p>Figma</p>
+                        <p>CSS</p>
+                        <p>VS Code</p>
+                        <p>C++</p>
+                        <p>Git</p>
+                    </div>
+                    <div class="habilidades-blandas">
+                        <ul>
+                            <li>Trabajo en equipo.</li>
+                            <li>Pensamiento lógico</li>
+                            <li>Aprendizaje rápido</li>
+                            <li>Organización</li>
+                            <li>Proactividad</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="hobbies-contenido">
+                    <img src="/assets/images/estudiar.svg" alt="Estudiar">
+                    <img src="/assets/images/investigar.svg" alt="Investigar">
+                    <img src="/assets/images/musica.svg" alt="Musica">
+                    <img src="/assets/images/arte.svg" alt="Dibujo">
+                    <img src="/assets/images/patines.svg" alt="Patinaje Urbano">
+                    <img src="/assets/images/videojuegos.svg" alt="Videojuegos">
+                </section>
             </div>
-            <div class="hobbies">
-                <h2>Hobbies</h2>
-                <div class="contenido">
-                    <table>
-                        <tr>
-                            <td><img src="/assets/images/estudiar.svg" alt="Estudiar"></td>
-                            <td><img src="/assets/images/investigar.svg" alt="investigar"></td>                
-                        </tr>
-                        <tr>
-                            <td><img src="/assets/images/musica.svg" alt="Música"></td>
-                            <td><img src="/assets/images/arte.svg" alt="Dibujo"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="/assets/images/patines.svg" alt="Patinaje urbano"></td>
-                            <td><img src="/assets/images/videojuegos.svg" alt="videojuegos"></td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="lado-derecho">
+                <div class="linea-delgada"></div>
+                <section class="globo">
+                    <p>
+                        Actualmente estoy formándome en programación y desarrollo web, donde estoy desarrollando habilidades en lógica de programación y creación de páginas web.
+                    </p>
+                </section>
+                <section class="foto">
+                    <img src="/assets/images/mariana.png" alt="Fotografía de Mariana Iñiguez">
+                </section>
             </div>
         </div>
-        <div class="der"></div>
-    </section>
 </main>
 <footer class="container">
   <div id="primera-parte">
@@ -94,5 +89,6 @@
   </div>
   <p>2026&copy; Code Coffee | Todos los derechos reservados </p>
 </footer>
+<script src="/src/js/main.js"></script>
 </body>
 </html>
