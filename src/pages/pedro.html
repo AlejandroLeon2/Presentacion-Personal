@@ -7,7 +7,73 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Pedro</h1>
-    <p>Backend Developer</p>
+    <header>
+
+    </header>
+    <main class="flex flex-col  ">
+    <section id="hero-section" class="">
+       
+            <div id="hero-image" class="image-container relative ">
+                <img src="/images/gato-5.svg" class="image-container-img" alt="Pedro">
+                <div id="circulo-1" class="absolute circulo ">
+
+                </div>
+                <div id="circulo-2" class="absolute circulo ">
+
+                </div>
+                <div id="circulo-3" class="absolute circulo ">
+
+                </div>
+                <div id="circulo-4" class="absolute circulo ">
+
+                </div>
+            </div>
+            <div id="hero-content" class="flex flex-col  items-center justify-center ">
+                <h1 class="">Pedro Alejandro</h2>
+                <p>Dev Frontend</p>
+            </div>
+
+    </section>
+    <section id="hobbies-section" class="section-container">
+        <div class="content-title gap-4 justify-between px-8 items-center">
+            <h2>Hobbies</h2>
+           <img src="/images/gato-1.svg" alt="" class="gato-1">
+        </div>
+        <ul id="hobbies-list" class="list-container">
+
+        </ul>
+
+    </section>
+    <section id="projects-section" class="section-container ">
+        <div class="content-title relative px-8 ">
+            <h2>Proyectos</h2>
+           <img src="/images/gato-6.svg" alt="" class="gato-6 absolute">
+        </div>
+        <ul id="projects-list" class="list-container">
+
+        </ul>
+    </section>
+    <section id="contact-section" class="section-container">
+        <div class="content-title px-8">
+            <h2>Contacto</h2>
+     
+        </div>
+        <div id="contact-container" class="contact-container flex  gap-4 w-full mx-auto   justify-around items-center">
+            <form id="contact-form">
+             <legend>Formulario de contacto</legend>
+                <input type="text" id="name" name="name" placeholder="Nombre">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="contact-info" >
+                <p>Email: [EMAIL_ADDRESS]</p>
+                <p>Teléfono: 123456789</p>
+                <p>Dirección: Calle Falsa 123</p>
+            </div>  
+        </div>
+    </section>
+    </main>
+    <script src="../js/components/card.js" defer></script>
 </body>
 </html>
