@@ -95,18 +95,18 @@ footer{
     align-items: center;
 }
 
-#primera-parte{
+.primera-parte{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#contacto{
+.contacto{
     line-height: 2.5em;
 }
 
-#redes{
+.redes{
     display: flex;
     gap: 2em;
 }
