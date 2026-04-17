@@ -12,6 +12,20 @@
 <main>
     <h1>Mariana Iñiguez</h1>
     <div class="presentacion">
+        <div class="lado-derecho">
+            <div class="linea-delgada"></div>
+            <div class="cv">
+                <section class="globo">
+                    <p>
+                        Actualmente me encuentro en formación en desarrollo de software, fortaleciendo mis habilidades en lógica de programación y creación de interfaces web.
+                    </p>
+                </section>
+                <a href="/assets/files/Resume Servicio al Cliente.pdf" download="CV_Mariana"><button>Descarga CV</button></a>
+            </div>
+            <section class="foto">
+                <img src="/assets/images/mariana.png" alt="Fotografía de Mariana Iñiguez">
+            </section>
+        </div>
         <div class="lado-izquierdo">
             <div class="linea-gruesa"></div>
             <h2 class="titulo-1">Habilidades</h2>
@@ -44,20 +58,7 @@
                 <img src="/assets/images/videojuegos.svg" alt="Videojuegos">
             </section>
         </div>
-        <div class="lado-derecho">
-            <div class="linea-delgada"></div>
-            <div class="cv">
-                <section class="globo">
-                    <p>
-                        Actualmente me encuentro en formación en desarrollo de software, fortaleciendo mis habilidades en lógica de programación y creación de interfaces web.
-                    </p>
-                </section>
-                <button>Descarga CV</button>
-            </div>
-            <section class="foto">
-                <img src="/assets/images/mariana.png" alt="Fotografía de Mariana Iñiguez">
-            </section>
-        </div>
+        
     </div>
     <div class="titulo">
         <div class="linea-gruesa"></div>
@@ -71,6 +72,7 @@
             <p>
                 Aplicación en C++ que permite registrar estudiantes, organizar su información y realizar búsquedas dentro del sistema utilizando estructuras de datos.
             </p>
+            <button class="proyecto__button">Ver mas...</button>
         </div>
         <div class="proyecto">
             <h3>Análisis de Resultados de Números Aleatorios</h3>
@@ -79,6 +81,7 @@
             <p>
                 Aplicación que genera números aleatorios y realiza un análisis de los resultados obtenidos. El programa registra los datos en archivos externos para almacenar la información y facilitar su posterior consulta.
             </p>
+            <button class="proyecto__button">Ver mas...</button>
         </div>
         <div class="proyecto">
             <h3>Adivina el Número</h3>
@@ -87,14 +90,20 @@
             <p>
                 Juego desarrollado en C++ donde el usuario tiene 5 intentos para adivinar un número aleatorio entre 1 y 100. El programa da pistas indicando si el número es mayor o menor.            
             </p>
+            <button class="proyecto__button">Ver mas...</button>
         </div>
     </div>
     <div class="titulo">
         <div class="linea-gruesa"></div>
         <h2 class="titulo-1">Contacto</h2>
     </div>
-    <div class="container" id="proyecto">
-       
+    <div class="container formulario" id="contacto">
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </main>
 <div id="footer"></div>
