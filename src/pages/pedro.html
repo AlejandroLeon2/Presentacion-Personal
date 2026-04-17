@@ -1,79 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pedro.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Pedro Alejandro</title>
+    <link rel="stylesheet" href="../css/pedro.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <figure class="hero__image-container">
+          <img
+            src="/assets/images/gato-5.svg"
+            class="hero__image"
+            alt="Pedro Alejandro"
+          />
 
-    </header>
-    <main class="flex flex-col  ">
-    <section id="hero-section" class="">
-       
-            <div id="hero-image" class="image-container relative ">
-                <img src="/images/gato-5.svg" class="image-container-img" alt="Pedro">
-                <div id="circulo-1" class="absolute circulo ">
-
-                </div>
-                <div id="circulo-2" class="absolute circulo ">
-
-                </div>
-                <div id="circulo-3" class="absolute circulo ">
-
-                </div>
-                <div id="circulo-4" class="absolute circulo ">
-
-                </div>
-            </div>
-            <div id="hero-content" class="flex flex-col  items-center justify-center ">
-                <h1 class="">Pedro Alejandro</h2>
-                <p>Dev Frontend</p>
-            </div>
-
-    </section>
-    <section id="hobbies-section" class="section-container">
-        <div class="content-title gap-4 justify-between px-8 items-center">
-            <h2>Hobbies</h2>
-           <img src="/images/gato-1.svg" alt="" class="gato-1">
+          <div class="hero__circle hero__circle--1">
+            <!-- Astro -->
+            <span
+              class="iconify icons"
+              data-icon="logos:astro-icon"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--2">
+            <span
+              class="iconify icons"
+              data-icon="logos:angular-icon"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--3">
+            <!-- Google Apps Script -->
+            <span
+              class="iconify icons"
+              data-icon="logos:css"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--4">
+            <!-- C++ -->
+            <span
+              class="iconify icons"
+              data-icon="logos:c-plusplus"
+              data-width="48"
+            ></span>
+          </div>
+        </figure>
+        <div class="hero__content">
+          <h1 class="hero__title">Pedro Alejandro</h1>
+          <p class="hero__subtitle">Desarrollador Frontend</p>
         </div>
-        <ul id="hobbies-list" class="list-container">
+      </section>
 
+      <!-- Hobbies -->
+      <section class="section section--hobbies">
+        <div class="section__header">
+          <h2 class="section__title">Hobbies</h2>
+          <img
+            src="/assets/images/gato-1.svg"
+            alt="Icono gato"
+            class="section__icon section__icon--hobbies"
+          />
+        </div>
+        <ul id="hobbies-list" class="cards-list cards-list--hobbies">
+          <!-- Angular -->
         </ul>
+      </section>
 
-    </section>
-    <section id="projects-section" class="section-container ">
-        <div class="content-title relative px-8 ">
-            <h2>Proyectos</h2>
-           <img src="/images/gato-6.svg" alt="" class="gato-6 absolute">
+      <!-- Proyectos -->
+      <section class="section section--projects">
+        <div class="section__header">
+          <h2 class="section__title">Proyectos</h2>
+          <img
+            src="/assets/images/gato-6.svg"
+            alt="Icono gato"
+            class="section__icon section__icon--projects"
+          />
         </div>
-        <ul id="projects-list" class="list-container">
+        <ul id="projects-list" class="cards-list cards-list--projects"></ul>
+      </section>
 
-        </ul>
-    </section>
-    <section id="contact-section" class="section-container">
-        <div class="content-title px-8">
-            <h2>Contacto</h2>
-     
+      <!-- Contacto -->
+      <section class="section section--contact">
+        <div class="section__header">
+          <h2 class="section__title">Contacto</h2>
         </div>
-        <div id="contact-container" class="contact-container flex  gap-4 w-full mx-auto   justify-around items-center">
-            <form id="contact-form">
-             <legend>Formulario de contacto</legend>
-                <input type="text" id="name" name="name" placeholder="Nombre">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <textarea id="message" name="message" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
+        <div class="contact" aria-labelledby="contact-heading">
+          <div class="contact__form-card">
+            <form
+              id="contact-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdM8DFJbxcJuK9J7kMnteJjUdgcJDwAgpRvsQ5hSDxQKkkpNA/formResponse"
+              method="POST"
+              class="contact__form"
+            >
+              <fieldset class="contact__fieldset">
+                <legend class="contact__legend">Formulario de contacto</legend>
+
+                <div class="contact__field">
+                  <label for="entry.1976024743" class="contact__label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    id="entry.1976024743"
+                    name="entry.1976024743"
+                    class="contact__input"
+                    placeholder="Tu nombre completo"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="entry.51458991" class="contact__label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="entry.51458991"
+                    name="entry.51458991"
+                    class="contact__input"
+                    placeholder="tu@email.com"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="entry.1046613419" class="contact__label"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="entry.1046613419"
+                    name="entry.1046613419"
+                    class="contact__textarea"
+                    placeholder="Escribe tu mensaje aquí..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact__button">
+                  Enviar mensaje
+                </button>
+              </fieldset>
             </form>
-            <div id="contact-info" >
-                <p>Email: [EMAIL_ADDRESS]</p>
-                <p>Teléfono: 123456789</p>
-                <p>Dirección: Calle Falsa 123</p>
-            </div>  
+          </div>
+
+          <address class="contact__info">
+            <img
+              src="/assets/images/gato-3.svg"
+              alt="imagen de gato"
+              class="contact__info-icon"
+            />
+            <h2 class="contact__info-title">Información de contacto</h2>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <span class="contact__info-label">Email</span>
+                <a
+                  href="mailto:alejandroleonpedro7@gmail.com"
+                  class="contact__link"
+                  >alejandroleonpedro7@gmail.com</a
+                >
+              </li>
+              <li class="contact__info-item">
+                <span class="contact__info-label">Teléfono</span>
+                <a href="tel:+51924932128" class="contact__link"
+                  >+51 924932128</a
+                >
+              </li>
+              <li class="contact__info-item">
+                <span class="contact__info-label">Dirección</span>
+                <span class="contact__info-value">Calle las palmeras</span>
+              </li>
+            </ul>
+          </address>
         </div>
-    </section>
+      </section>
     </main>
-    <script src="../js/components/card.js" defer></script>
-</body>
+    <footer id="footer"></footer>
+
+
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>

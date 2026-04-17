@@ -1,31 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Coffee | Desarrollo web</title>
 
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-<div id="header"></div>
-<main>
-  <div class="texto">
-    <span class="linea"></span>
-    <h1>Nuestro<br>equipo</h1>
-    <span class="linea"></span>
-  </div>
+  <body>
+    <header id="header"></header>
+    <main class="main__index">
+      <section class="hero">
+        <div class="hero__texto">
+          <span class="hero__linea"></span>
+          <h1 class="hero__titulo">Nuestro<br />equipo</h1>
+          <span class="hero__linea"></span>
+        </div>
 
-  <div class="circulo">
-    <div class="circulo-interior"></div>
-    <img class="foto" src="/Presentacion-Personal/assets/images/mariana.png" alt="Mariana Iñiguez">
-  </div>
+        <div class="hero__circulo">
+          <div class="hero__circulo-fondo"></div>
+          a
+          <a href="/src/pages/pedro.html">
+            <img
+              class="hero__foto hero__foto--gato"
+              src="/assets/images/gato-5.svg"
+              alt="Pedro Alejandro"
+            />
+          </a>
+          <a href="/src/pages/mariana.html">
+            <img
+              class="hero__foto hero__foto--persona"
+              src="/assets/images/mariana.png"
+              alt="Mariana Iñiguez"
+            />
+          </a>
+        </div>
+        <div class="hero__extra">
+          <div class="hero__extra-nomada">
+            <span class="hero__extra__nomada-text">Estudiantes de:
+                   <img
+              class="hero__extra__nomada-gato"
+              src="/assets/images/gato-6.svg"
+              alt="imagen de gato"
+            />
+            </span>
+            <img
+              class="hero__extra__nomada-logo"
+              src="/assets/images/nomada-logo.png"
+              alt="Logo Nomada"
+            />
 
-</main>
-<div id="footer"></div>
-<script src="/src/js/script.js"></script>
-</body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>
-
