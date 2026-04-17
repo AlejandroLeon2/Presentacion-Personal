@@ -1,111 +1,112 @@
-@font-face {
-  font-family: 'Michroma';
-  src: url('../../fonts/Michroma-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+*{
+    margin:0%;
+    padding:0%;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Michroma";
+    src: url(/assets/fonts/Michroma-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Regular.ttf);
 }
 
-@font-face {
-  font-family: 'Splatink';
-  src: url('../../fonts/Splatink_PERSONAL_USE_ONLY.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+:root{
+    --color-primario: #6350A3;
+    --color-secundario: #EEECEE;
+    --color-terciario: #F6DCEB;
+    --color-cuaternario: #7C7D7F;
+    --sombras: 0px 4px 10px rgba(124, 125, 127, 0.2);
+
+    --font-estandar: "Montserrat", sans-serif;
+    --font-titulos: "Michroma", sans-serif;
+
+    --text-xx: 2.00rem;
+    --text-xl: 1.75rem;
+    --text-lg: 1.50rem;
+    --text-md: 1.00rem;
+    --text-sm: 0.75rem;
 }
 
-:root {
-  /* Colors */
-  --primary: #6350A3;
-  --primary-hover: #4E3F8A;
-  --secondary: #EEECEE;
-  --background: #F9FAFB;
-  --surface: #FFFFFF;
-  --text: #111827;
-  --text-muted: #4B5563;
-  --border: #E5E7EB;
-
-  /* Typography */
-  --font-heading: 'Michroma', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
-  --font-display: 'Splatink', cursive;
-  --font-size-base: 16px;
-  --line-height: 1.6;
-
-  /* Spacing */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
-
-  /* Misc */
-  --radius: 0.75rem;
-  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.container{
+    padding: 0em 8em;
 }
 
-/* Reset */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 2;
 }
 
-html {
-  font-size: var(--font-size-base);
-  scroll-behavior: smooth;
+header img{
+    padding: 1em 0em;
 }
 
-body {
-  font-family: var(--font-body);
-  background-color: var(--background);
-  color: var(--text);
-  line-height: var(--line-height);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+nav{
+    display: flex;
+    font-family: var(--font-titulos);
+    font-size: var(--text-md);
+    gap:2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  line-height: 1.2;
-  margin-bottom: var(--space-sm);
-  color: var(--primary);
+a{
+    text-decoration: none;
+    color: var(--color-cuaternario);
+    white-space: nowrap;
 }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: var(--transition);
+a:hover{
+    color: var(--color-primario);
 }
 
-a:hover {
-  color: var(--primary-hover);
+.dropdown-content{
+    background-color: white;
+    display: none;
+    position: absolute;
+    box-shadow: var(--sombras);
+    z-index: 2;
 }
 
-ul, ol {
-  list-style: none;
+.dropdown-content.active{
+    display: block;
 }
 
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+}
 
+.dropdown:hover .dropdown-content{
+    display:block;
+    justify-content: right;
+}
 
+footer{
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-titulos);
+    font-size: var(--text-sm);
+    align-items: center;
+}
 
+.primera-parte{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.contacto{
+    line-height: 2.5em;
+}
 
-
+.redes{
+    display: flex;
+    gap: 2em;
+}
