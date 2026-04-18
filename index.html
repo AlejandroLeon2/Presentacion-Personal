@@ -1,69 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentación Personal</title>
-  <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-  <main>
-    <header>
-      <h1>Nuestro Equipo</h1>
-      <p>Presentamos a los expertos detrás de cada línea de código y cada píxel diseñado.</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Coffee | Desarrollo web</title>
 
-    <section>
-      <!-- Alejandro -->
-      <article>
-        <div>
-          <span>A</span>
-        </div>
-        <h2>Alejandro</h2>
-        <p>Lead Developer</p>
-        <a href="#">Ver Perfil</a>
-      </article>
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-      <!-- Maria Elena -->
-      <article>
-        <div>
-          <span>ME</span>
+  <body>
+    <header id="header"></header>
+    <main class="main__index">
+      <section class="hero">
+        <div class="hero__texto">
+          <span class="hero__linea"></span>
+          <h1 class="hero__titulo">Nuestro<br />equipo</h1>
+          <span class="hero__linea"></span>
         </div>
-        <h2>Maria Elena</h2>
-        <p>Frontend Developer</p>
-        <a href="src/pages/mariaElena.html">Ver Perfil</a>
-      </article>
 
-      <!-- Mariana -->
-      <article>
-        <div>
-          <span>M</span>
+        <div class="hero__circulo">
+          <div class="hero__circulo-fondo"></div>
+          a
+          <a href="/src/pages/pedro.html">
+            <img
+              class="hero__foto hero__foto--gato"
+              src="/assets/images/gato-5.svg"
+              alt="Pedro Alejandro"
+            />
+          </a>
+          <a href="/src/pages/mariana.html">
+            <img
+              class="hero__foto hero__foto--persona"
+              src="/assets/images/mariana.png"
+              alt="Mariana Iñiguez"
+            />
+          </a>
         </div>
-        <h2>Mariana</h2>
-        <p>UI/UX Designer</p>
-        <a href="src/pages/mariana.html">Ver Perfil</a>
-      </article>
+        <div class="hero__extra">
+          <div class="hero__extra-nomada">
+            <span class="hero__extra__nomada-text">Estudiantes de:
+                   <img
+              class="hero__extra__nomada-gato"
+              src="/assets/images/gato-6.svg"
+              alt="imagen de gato"
+            />
+            </span>
+            <img
+              class="hero__extra__nomada-logo"
+              src="/assets/images/nomada-logo.png"
+              alt="Logo Nomada"
+            />
 
-      <!-- Pedro -->
-      <article>
-        <div>
-          <span>P</span>
+          </div>
         </div>
-        <h2>Pedro</h2>
-        <p>Backend Developer</p>
-        <a href="../src/pages/pedro.html">Ver Perfil</a>
-      </article>
-
-      <!-- Victor -->
-      <article>
-        <div>
-          <span>V</span>
-        </div>
-        <h2>Victor</h2>
-        <p>Fullstack Developer</p>
-        <a href="src/pages/victor.html">Ver Perfil</a>
-      </article>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>

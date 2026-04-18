@@ -1,0 +1,162 @@
+@import "style.css";
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  max-height: 600px;
+  padding: 2rem;
+  gap: 4rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out 0s;
+
+  .hero__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    flex-shrink: 0;
+  }
+
+  .hero__linea {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--color-cuaternario);
+    border-radius: 2px;
+  }
+
+  .hero__titulo {
+    font-family: var(--font-titulos);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-cuaternario);
+    text-align: center;
+    line-height: 1.2;
+
+    @media (min-width: 640px) {
+      & {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .hero__circulo {
+    position: relative;
+    width: 100px;
+    height: 480px;
+    flex-shrink: 0;
+
+    .hero__circulo-fondo {
+      position: absolute;
+      top: -200px;
+      right: -50px;
+      width: 900px;
+      height: 180%;
+      background-image: url("/assets/images/circulo.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+
+      @media (min-width: 640px) {
+        & {
+          border-width: 60px;
+        }
+      }
+    }
+    @media (min-width: 640px) {
+      & {
+        border-width: 60px;
+        margin-left: 4rem;
+      }
+    }
+  }
+
+  .hero__foto {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out 0s;
+    &:hover {
+      translate: 0px -6px;
+    }
+
+    &.hero__foto--gato {
+      width: 140px;
+      height: 140px;
+      top: 0px;
+      right: 20px;
+
+      @media (max-width: 640px) {
+        & {
+          bottom: 10px;
+          right: 20px;
+        }
+      }
+    }
+
+    &.hero__foto--persona {
+      width: 120px;
+      height: 140px;
+      bottom: -26px;
+      right: 40px;
+    }
+  }
+  .hero__extra {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .hero__extra-nomada {
+      width: -1px;
+      display: flex;
+      flex-direction: column;
+
+      .hero__extra__nomada-text {
+        font-family: var(--font-titulos);
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--color-cuaternario);
+        position: relative;
+
+        .hero__extra__nomada-gato {
+          max-width: 120px;
+          position: absolute;
+
+          @media (min-width: 940px) {
+            & {
+              bottom: 0px;
+              right: 20px;
+            }
+          }
+          @media (min-width: 1024px) {
+            & {
+              bottom: auto;
+              right: -130px;
+            }
+          }
+        }
+      }
+
+      .hero__extra__nomada-logo {
+        max-width: 320px;
+      }
+    }
+
+    @media (max-width: 940px) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 640px) {
+    & {
+      gap: 7rem;
+      padding-left: 2rem;
+    }
+  }
+}

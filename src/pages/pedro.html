@@ -1,13 +1,376 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pedro.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Pedro</h1>
-    <p>Backend Developer</p>
-</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Pedro Alejandro</title>
+    <link rel="stylesheet" href="../css/pedro.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <figure class="hero__image-container">
+          <img
+            src="/assets/images/gato-5.svg"
+            class="hero__image"
+            alt="Pedro Alejandro"
+          />
+
+          <div class="hero__circle hero__circle--1">
+            <!-- Astro -->
+            <span
+              class="iconify icons"
+              data-icon="logos:astro-icon"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--2">
+            <span
+              class="iconify icons"
+              data-icon="logos:angular-icon"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--3">
+            <!-- Google Apps Script -->
+            <span
+              class="iconify icons"
+              data-icon="logos:css"
+              data-width="48"
+            ></span>
+          </div>
+          <div class="hero__circle hero__circle--4">
+            <!-- C++ -->
+            <span
+              class="iconify icons"
+              data-icon="logos:c-plusplus"
+              data-width="48"
+            ></span>
+          </div>
+        </figure>
+        <div class="hero__content">
+          <h1 class="hero__title">Pedro Alejandro</h1>
+          <p class="hero__subtitle">Desarrollador Frontend</p>
+        </div>
+      </section>
+
+      <!-- Hobbies -->
+      <section class="section section--hobbies">
+        <div class="section__header">
+          <h2 class="section__title">Hobbies</h2>
+          <img
+            src="/assets/images/gato-1.svg"
+            alt="Icono gato"
+            class="section__icon section__icon--hobbies"
+          />
+        </div>
+        <ul id="hobbies-list" class="cards-list cards-list--hobbies">
+          <li class="card card--hobby">
+            <div class="card__image-container">
+              <img
+                src="/assets/images/musica.jpeg"
+                alt="Música"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Música</h3>
+              <p class="card__description">
+                Disfruto escuchar conciertos y explorar nuevos géneros
+                musicales.
+              </p>
+              <audio
+                src="/assets/files/descargar.mp3"
+                controls
+                class="card__audio"
+              >
+                Tu navegador no soporta audio.
+              </audio>
+            </div>
+          </li>
+
+          <li class="card card--hobby">
+            <figure class="card__image-container">
+              <img
+                src="/assets/images/afinity.jpg"
+                alt="Diseño en Affinity"
+                class="card__image"
+              />
+            </figure>
+            <div class="card__content">
+              <h3 class="card__title">Diseño con Affinity</h3>
+              <p class="card__description">
+                Me gusta crear ilustraciones y experimentar con identidades
+                visuales.
+              </p>
+              <p class="card__figcaption">Proyecto en Affinity Designer</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="section section--projects">
+        <div class="section__header">
+          <h2 class="section__title">Proyectos</h2>
+          <img
+            src="/assets/images/gato-6.svg"
+            alt="Icono gato"
+            class="section__icon section__icon--projects"
+          />
+        </div>
+        <ul id="projects-list" class="cards-list cards-list--projects">
+          <li class="card card--project">
+            <div class="card__image-container">
+              <img
+                src="/assets/images/accessibletravelperu.com_.png"
+                alt="Accesible Travel"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <span class="card__badge card__badge--project">Astro</span>
+              <h3 class="card__title">Accesible Travel</h3>
+              <p class="card__description">
+                Página web informativa desarrollada con Astro para turismo
+                accesible.
+              </p>
+              <div class="card__tags">
+                <span class="card__tag">Astro</span>
+                <span class="card__tag">HTML</span>
+                <span class="card__tag">CSS</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a
+                href="https://github.com/AlejandroLeon2/AccessibleTravel"
+                class="card__link card__link--github"
+                target="_blank"
+                rel="noopener"
+              >
+                <span
+                  class="iconify"
+                  data-icon="mdi:github"
+                  data-width="16"
+                ></span>
+                GitHub
+              </a>
+            </div>
+          </li>
+
+          <li class="card card--project">
+            <div class="card__image-container">
+              <img
+                src="/assets/images/menu.png"
+                alt="Menú Virtual"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <span class="card__badge card__badge--project">Angular</span>
+              <h3 class="card__title">Menú Virtual</h3>
+              <p class="card__description">
+                Aplicación de menú digital desarrollada con Angular para
+                restaurantes.
+              </p>
+              <div class="card__tags">
+                <span class="card__tag">Angular</span>
+                <span class="card__tag">TypeScript</span>
+                <span class="card__tag">CSS</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a
+                href="https://github.com/Tinya-Code/menu-restaurante-frontend"
+                class="card__link card__link--github"
+                target="_blank"
+                rel="noopener"
+              >
+                <span
+                  class="iconify"
+                  data-icon="mdi:github"
+                  data-width="16"
+                ></span>
+                GitHub
+              </a>
+            </div>
+          </li>
+
+          <li class="card card--project">
+            <div class="card__image-container">
+              <img
+                src="/assets/images/soledadconsultoraimmunotec.com_.png"
+                alt="Landing Soledad Inmunocal"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <span class="card__badge card__badge--project">Astro</span>
+              <h3 class="card__title">Landing Soledad Inmunocal</h3>
+              <p class="card__description">
+                Landing page promocional creada con Astro para Soledad
+                Inmunocal.
+              </p>
+              <div class="card__tags">
+                <span class="card__tag">Astro</span>
+                <span class="card__tag">HTML</span>
+                <span class="card__tag">CSS</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a
+                href="https://github.com/AlejandroLeon2/immunoctec"
+                class="card__link card__link--github"
+                target="_blank"
+                rel="noopener"
+              >
+                <span
+                  class="iconify"
+                  data-icon="mdi:github"
+                  data-width="16"
+                ></span>
+                GitHub
+              </a>
+            </div>
+          </li>
+
+          <li class="card card--project">
+            <div class="card__image-container">
+              <img
+                src="/assets/images/qillary.tours_.png"
+                alt="Qillary Tours"
+                class="card__image"
+              />
+            </div>
+            <div class="card__content">
+              <span class="card__badge card__badge--project">Astro</span>
+              <h3 class="card__title">Qillary Tours</h3>
+              <p class="card__description">
+                Sitio web de viajes desarrollado con Astro para la agencia
+                Qillary Tours.
+              </p>
+              <div class="card__tags">
+                <span class="card__tag">Astro</span>
+                <span class="card__tag">HTML</span>
+                <span class="card__tag">CSS</span>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a
+                href="https://github.com/AlejandroLeon2/qillaryPage"
+                class="card__link card__link--github"
+                target="_blank"
+                rel="noopener"
+              >
+                <span
+                  class="iconify"
+                  data-icon="mdi:github"
+                  data-width="16"
+                ></span>
+                GitHub
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section section--contact">
+        <div class="section__header">
+          <h2 class="section__title">Contacto</h2>
+        </div>
+        <div class="contact" aria-labelledby="contact-heading">
+          <div class="contact__form-card">
+            <form
+              id="contact-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdM8DFJbxcJuK9J7kMnteJjUdgcJDwAgpRvsQ5hSDxQKkkpNA/formResponse"
+              method="POST"
+              class="contact__form"
+            >
+              <fieldset class="contact__fieldset">
+                <legend class="contact__legend">Formulario de contacto</legend>
+
+                <div class="contact__field">
+                  <label for="entry.1976024743" class="contact__label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    id="entry.1976024743"
+                    name="entry.1976024743"
+                    class="contact__input"
+                    placeholder="Tu nombre completo"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="entry.51458991" class="contact__label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="entry.51458991"
+                    name="entry.51458991"
+                    class="contact__input"
+                    placeholder="tu@email.com"
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="entry.1046613419" class="contact__label"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="entry.1046613419"
+                    name="entry.1046613419"
+                    class="contact__textarea"
+                    placeholder="Escribe tu mensaje aquí..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact__button">
+                  Enviar mensaje
+                </button>
+              </fieldset>
+            </form>
+          </div>
+
+          <address class="contact__info">
+            <img
+              src="/assets/images/gato-3.svg"
+              alt="imagen de gato"
+              class="contact__info-icon"
+            />
+            <h2 class="contact__info-title">Información de contacto</h2>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <span class="contact__info-label">Email</span>
+                <a
+                  href="mailto:alejandroleonpedro7@gmail.com"
+                  class="contact__link"
+                  >alejandroleonpedro7@gmail.com</a
+                >
+              </li>
+              <li class="contact__info-item">
+                <span class="contact__info-label">Teléfono</span>
+                <a href="tel:+51924932128" class="contact__link"
+                  >+51 924932128</a
+                >
+              </li>
+              <li class="contact__info-item">
+                <span class="contact__info-label">Dirección</span>
+                <span class="contact__info-value">Calle las palmeras</span>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="/src/js/script.js"></script>
+  </body>
 </html>
