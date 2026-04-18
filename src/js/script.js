@@ -57,19 +57,13 @@ footer.innerHTML = footerHTML;
 
 
 const form = document.getElementById("contact-form");
+const button = document.getElementById("button-form");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   try {
     const formData = new FormData(form);
-
-    const dataObj = {};
-    formData.forEach((value, key) => {
-      dataObj[key] = value;
-    });
-
-    console.log("Objeto enviado:", dataObj);
 
     await fetch(form.action, {
       method: form.method,
@@ -78,7 +72,10 @@ form.addEventListener("submit", async (e) => {
     });
 
     form.reset();
+    button.textContent="Enviado con exito";
+
   } catch (error) {
+    button.textContent="Error al enviar";
     console.error("Error al enviar:", error);
     alert("Hubo un error al enviar el formulario. Intenta de nuevo.");
   }
